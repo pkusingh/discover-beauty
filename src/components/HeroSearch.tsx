@@ -24,17 +24,17 @@ const HeroSearch = () => {
   const [searchMode, setSearchMode] = useState<"search" | "aide">("aide");
 
   return (
-    <section className="relative w-full min-h-[520px] flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative w-full flex flex-col items-center justify-start overflow-hidden rounded-2xl">
       {/* Background image */}
       <img
         src={heroImage}
         alt="Travel destinations around the world"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover rounded-2xl"
       />
-      <div className="absolute inset-0 hero-gradient" />
+      <div className="absolute inset-0 hero-gradient rounded-2xl" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-3xl mx-auto px-4 flex flex-col items-center gap-6 py-16">
+      <div className="relative z-10 w-full mx-auto px-4 flex flex-col items-center gap-5 py-10">
         {/* Mode tabs */}
         <div className="flex items-center gap-1 glass-panel rounded-full px-1 py-1">
           <button
