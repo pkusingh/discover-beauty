@@ -1,11 +1,9 @@
-import HeroSearch from "@/components/HeroSearch";
-import PopularDestinations from "@/components/PopularDestinations";
+import ReelsFeed from "@/components/ReelsFeed";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
-      <HeroSearch />
-      <PopularDestinations />
+    <main className="h-screen w-full overflow-hidden bg-foreground">
+      <ReelsFeed />
     </main>
   );
 };
