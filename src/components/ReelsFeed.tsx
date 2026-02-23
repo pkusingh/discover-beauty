@@ -275,10 +275,10 @@ const ReelsFeed = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-background flex justify-center py-6">
+    <div className="flex-shrink-0">
       <div
         ref={containerRef}
-        className="w-full max-w-[420px] h-[85vh] overflow-y-scroll snap-y snap-mandatory scrollbar-hide rounded-2xl shadow-2xl"
+        className="w-[380px] h-[85vh] overflow-y-scroll snap-y snap-mandatory scrollbar-hide rounded-2xl shadow-2xl"
       >
         {reelsData.map((reel, i) => (
           <div key={reel.id} data-index={i} className="w-full h-[85vh]">
