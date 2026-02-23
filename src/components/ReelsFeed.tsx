@@ -166,7 +166,7 @@ const VideoReel = ({ reel, isActive }: { reel: Reel; isActive: boolean }) => {
 
       {/* Top bar */}
       <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-4 pt-[env(safe-area-inset-top,12px)] pb-2">
-        <h1 className="text-lg font-display font-bold text-primary-foreground tracking-wide">Explore</h1>
+        <h1 className="text-lg font-heading font-bold text-primary-foreground tracking-wide">Explore</h1>
         <button className="p-2">
           <Search className="w-5 h-5 text-primary-foreground" />
         </button>
