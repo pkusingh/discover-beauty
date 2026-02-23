@@ -7,14 +7,11 @@ const Index = () => {
   return (
     <main className="min-h-screen w-full bg-background">
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-4 bg-primary rounded-b-2xl mx-4">
+      <header className="flex items-center px-6 py-4 bg-primary rounded-b-2xl mx-4">
         <div className="flex items-center gap-2.5">
           <img src={unravelIcon} alt="Unravel" className="w-7 h-7" />
           <img src={unravelWordmark} alt="Unravel" className="h-4" />
         </div>
-        <button className="px-5 py-2 rounded-full bg-primary-foreground text-primary text-sm font-bold hover:opacity-90 transition-opacity">
-          Get a Demo
-        </button>
       </header>
 
       {/* Main content */}
