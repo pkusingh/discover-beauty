@@ -275,15 +275,17 @@ const ReelsFeed = () => {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full h-screen overflow-y-scroll snap-y snap-mandatory scrollbar-hide"
-    >
-      {reelsData.map((reel, i) => (
-        <div key={reel.id} data-index={i} className="w-full h-screen">
-          <VideoReel reel={reel} isActive={activeIndex === i} />
-        </div>
-      ))}
+    <div className="w-full min-h-screen bg-background flex justify-center py-6">
+      <div
+        ref={containerRef}
+        className="w-full max-w-[420px] h-[85vh] overflow-y-scroll snap-y snap-mandatory scrollbar-hide rounded-2xl shadow-2xl"
+      >
+        {reelsData.map((reel, i) => (
+          <div key={reel.id} data-index={i} className="w-full h-[85vh]">
+            <VideoReel reel={reel} isActive={activeIndex === i} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

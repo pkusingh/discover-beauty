@@ -2,7 +2,7 @@ import ReelsFeed from "@/components/ReelsFeed";
 
 const Index = () => {
   return (
-    <main className="h-screen w-full overflow-hidden bg-foreground">
+    <main className="min-h-screen w-full bg-background">
       <ReelsFeed />
     </main>
   );
